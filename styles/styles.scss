@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --main-bg: hsl(185, 75%, 39%);
+    --main-text: hsl(229, 23%, 23%);
+    --main-area: hsl(227, 10%, 46%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: 'Kumbh Sans';
+}
+
+.background-imgs {
+
+    .c1 {
+        position: absolute;
+        top: -500px;
+        left: -300px;
+    }
+
+    .c2 {
+        position: absolute;
+        bottom: -500px;
+        right: -300px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    max-width: 1440px;
+    height: 100vh;
+
+    .card {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        background-color: white;
+        border-radius: 10px;
+
+        .header img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .per-info {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                margin: -50px auto 10px;
+                width: 100px;
+                height: auto;
+                border-radius: 100px;
+                border: 5px white solid;
+            }
+
+            .name-age {
+                margin: 10px auto 0px;
+                font-size: 18px;
+
+                .name {
+                    font-weight: 700;
+                    color: var(--main-text);
+                }
+
+                .age {
+                    margin-left: 5px;
+                    font-weight: 400;
+                    color: var(--main-area);
+                }
+            }
+
+            .area {
+                font-size: 14px;
+                margin: 6px auto 20px;
+                color: var(--main-area);
+            }
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #D3D3D3;
+        }
+
+        .stats {
+            margin: 25px 0px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+
+            .num {
+                color: var(--main-text);
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            .info {
+                margin-top: 5px;
+                color: var(--main-area);
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+}
